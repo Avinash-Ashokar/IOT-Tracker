@@ -19,7 +19,6 @@ export default function Home() {
   if (choice != "" && id != "") {
     chosen_one = resdata[id][choice]["History"];
     pl = resdata[id][choice]["Curr_loc"];
-    console.log(chosen_one);
   }
 
   const API_URL =
