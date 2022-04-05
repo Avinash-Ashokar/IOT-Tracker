@@ -28,7 +28,6 @@ export default function Home() {
     const fetch_data = setInterval(async () => {
       const { data } = await axios(API_URL);
       setResdata(data[1]);
-      console.log(data[1]);
     }, 1000);
     return () => clearInterval(fetch_data);
   }, [resdata]);
