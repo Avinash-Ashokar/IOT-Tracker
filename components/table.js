@@ -40,8 +40,8 @@ export default function MyTable({ chosen_one }) {
               <Tr key={data}>
                 <Td>{data}</Td>
                 <Td>{chosen_one[data]["Place"]}</Td>
-                <Td>{chosen_one[data]["Date"]}</Td>
                 <Td>{chosen_one[data]["Time"]}</Td>
+                <Td>{chosen_one[data]["Date"]}</Td>
               </Tr>
             ))}
           </Tbody>
