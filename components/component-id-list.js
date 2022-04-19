@@ -7,6 +7,16 @@ import {
   Flex,
   Spacer,
   Center,
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+  Portal,
 } from "@chakra-ui/react";
 import { ArrowBackIcon } from "@chakra-ui/icons";
 
@@ -70,9 +80,29 @@ export default function ComponentIdList({
               setChoice(id1);
             }}
           >
-            <Heading color={id1 === choice ? "white" : "tomato"}>
-              <Link>{id1 === choice ? `↪ ${id1} ↩` : `${id1}`}</Link>
-            </Heading>
+            <Popover trigger="hover">
+              <PopoverTrigger>
+                <Heading color={id1 === choice ? "white" : "tomato"}>
+                  <Link>{id1 === choice ? `↪ ${id1} ↩` : `${id1}`}</Link>
+                </Heading>
+              </PopoverTrigger>
+              <Portal>
+                <PopoverContent>
+                  <PopoverArrow />
+                  <PopoverHeader>
+                    Description Units Values Maximum Machining Dia 12 mm Maximum
+                    Machining Length 80 mm Spindle through Hole Dia 16 mm Max
+                    Main Spindle Speed rpm 12000 Max Sub Spindle Speed rpm 12000
+                    Max Spindle Speed of Gang Rotary Tool rpm 6000 X1 -Axis
+                    Rapid Traverse m/min 24 Y1 -Axis Rapid Traverse m/min 24
+                    X2,Z1,Z2 -Axis Rapid Traverse m/min 32 Main and Sub Spindle
+                    Power kW 1.5/2.2 Spindle Motor Power kW 1.5/2.2 No of Tools
+                    Maximum 20 Over all Dimensions (LxWxH) mm 1870 x 1170 x 1700
+                  </PopoverHeader>
+                  <PopoverCloseButton />
+                </PopoverContent>
+              </Portal>
+            </Popover>
           </Center>
         ))}
       </Container>
