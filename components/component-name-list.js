@@ -11,19 +11,23 @@ export default function ComponentNameList({ components, setId }) {
 
   return (
     <div style={style}>
-      {components.map((component) => (
-        <Box
-          w="100%"
-          style={divStyle}
-          key={component}
-          onClick={() => setId(component)}
-        >
-          <Heading color="tomato">
-            🧰
-            <Link> {component}</Link>
-          </Heading>
-        </Box>
-      ))}{" "}
+      {components.map((component) =>
+        component != "arg1" ? (
+          <Box
+            w="100%"
+            style={divStyle}
+            key={component}
+            onClick={() => setId(component)}
+          >
+            <Heading color="tomato">
+              🧰
+              <Link> {component}</Link>
+            </Heading>
+          </Box>
+        ) : (
+          " "
+        )
+      )}{" "}
     </div>
   );
 }
