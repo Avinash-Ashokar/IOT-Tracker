@@ -5,7 +5,9 @@ export default function MyBox({ place }) {
     <Center bg="tomato" h="100%" color="white">
       <VStack>
         <Heading size="4xl">
-          {place === "" ? "👋 Hi There" : `📌 [${place["0"]}, ${place["1"]}]`}{" "}
+          {place === ""
+            ? "👋 Hanon Asset Tracker"
+            : `📌 [${place["0"].slice(0, 9)}, ${place["1"].slice(0, 9)}]`}{" "}
         </Heading>
         <Text fontSize="xl">
           {place === "" ? "" : `I'm in ${place["place"]}`}

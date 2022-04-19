@@ -58,7 +58,7 @@ export default function ComponentIdList({
           ></Button>
           <Spacer />
           <Heading>{id}</Heading>
-          <div style={{ marginRight: "190px" }}></div>
+          <div style={{ marginRight: "110px" }}></div>
         </Flex>
       </Box>
       <Container style={style}>
