@@ -90,14 +90,16 @@ export default function ComponentIdList({
                 <PopoverContent>
                   <PopoverArrow />
                   <PopoverHeader>
-                    Description Units Values Maximum Machining Dia 12 mm Maximum
-                    Machining Length 80 mm Spindle through Hole Dia 16 mm Max
-                    Main Spindle Speed rpm 12000 Max Sub Spindle Speed rpm 12000
-                    Max Spindle Speed of Gang Rotary Tool rpm 6000 X1 -Axis
-                    Rapid Traverse m/min 24 Y1 -Axis Rapid Traverse m/min 24
-                    X2,Z1,Z2 -Axis Rapid Traverse m/min 32 Main and Sub Spindle
-                    Power kW 1.5/2.2 Spindle Motor Power kW 1.5/2.2 No of Tools
-                    Maximum 20 Over all Dimensions (LxWxH) mm 1870 x 1170 x 1700
+                    Machine Tool 500 X 300 / ZNC Work tank size 725 X 415 X 315
+                    mm Work table size 500 X 300 mm T slots for fixing 3 of 10
+                    mm Longitudinal travel (X) 280 mm Transverse travel (Y)
+                    200mm Quill Travel (Z) 250 mm Max .permitted load on the
+                    table 175 kg Max. electrode weight 50 kg Max. height above
+                    the table 250mm Servo system (Z axis) DC servo / AC servo
+                    for ZNC Filter element 10 μ paper filter Pimp motor rating
+                    1HP, 3 phase Overall dimensions 1300 x 1100 x 2100 Pulse
+                    Generator Max. working current 35 + 2 Amp Max. MRR(Copper to
+                    Steel) (Graphite to Steel) 240 mm3/min 300 mm3/min
                   </PopoverHeader>
                   <PopoverCloseButton />
                 </PopoverContent>
