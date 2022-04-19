@@ -101,7 +101,6 @@ export default function ComponentIdList({
                     Generator Max. working current 35 + 2 Amp Max. MRR(Copper to
                     Steel) (Graphite to Steel) 240 mm3/min 300 mm3/min
                   </PopoverHeader>
-                  <PopoverCloseButton />
                 </PopoverContent>
               </Portal>
             </Popover>
