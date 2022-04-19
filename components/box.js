@@ -9,9 +9,9 @@ export default function MyBox({ place }) {
             ? "👋 Hanon Asset Tracker"
             : `📌 [${place["0"].slice(0, 9)}, ${place["1"].slice(0, 9)}]`}{" "}
         </Heading>
-        <Text fontSize="xl">
+        {/* <Text fontSize="xl">
           {place === "" ? "" : `I'm in ${place["place"]}`}
-        </Text>
+        </Text> */}
       </VStack>
     </Center>
   );
