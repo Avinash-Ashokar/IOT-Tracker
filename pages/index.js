@@ -54,7 +54,7 @@ export default function Home() {
         <MyBox place={pl} />
       </GridItem>
       <GridItem colSpan={4}>
-        <MyTable chosen_one={chosen_one} />
+        {/* <MyTable chosen_one={chosen_one} /> */}
       </GridItem>
     </Grid>
   );
